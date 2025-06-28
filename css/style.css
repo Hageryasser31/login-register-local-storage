@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../assets/login.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 400px;
+    border-radius: 8px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+h2, h1{
+    color: #fff;
+}
+.input-field {
+  margin: 15px 0;
+}
+.input-field input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.3s ease;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.input-field input:focus~label,
+.input-field input:valid~label {
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+    -webkit-transform: translateY(-120%);
+    -moz-transform: translateY(-120%);
+    -ms-transform: translateY(-120%);
+    -o-transform: translateY(-120%);
+}
+.password-options {
+margin: 25px 0 35px 0;
+color: #fff;
+}
+#remember {
+    accent-color: #fff;
+}
+.wrapper a {
+color: #efefef;
+text-decoration: none;
+}
+.wrapper a:hover {
+    text-decoration: underline;
+}
+.wrapper button {
+    background-color: #294D4A;
+    color: #fff;
+    border:2px solid transparent;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.wrapper button:hover {
+    background-color:rgba(41, 77, 74, 0.8);
+    color: #fff;
+}
+.hidden {
+    display: none;
+}
